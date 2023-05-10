@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Task Workbook</title>
+    <link rel="stylesheet" href="home.component.css">
+</head>
+<body>
+    <nav>
+        <h1>Welcome to Task Workbook</h1>
+    </nav>
+    <div class="container">
+        <div class="buttons">
+          <button routerLink="/addtask" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"class="btn btn-success">Add New Task</button>
+        </div>
+        <div class="tasks">
+         
+          <div class="tasks">
+            <div class="task">
+              <h2>Task 1</h2>
+<br>
+<br>              <div class="task-buttons">
+                <button class="btn btn-warning">Update Task</button>
+                <button class="btn btn-danger">Delete Task</button>
+              </div>
+            </div>
+
+            <br>
+            <br>
+            <div class="task">
+              <h2>Task 2</h2>
+<br><br> 
+              <div class="task-buttons">
+                <button class="btn btn-warning">Update Task</button>
+                <button class="btn btn-danger">Delete Task</button>
+              </div>
+            </div>
+           
+          </div>
+          
+           
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task Workbook</title>
+	<link rel="stylesheet" type="text/css" href="addtask.component.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Task Workbook</h1>
+		<form action="/addtask" method="POST">
+			<label for="task-level">Task Level:</label>
+			<input type="text" id="task-level" name="task-level"><br>
+
+			<label for="started-on">Started On:</label>
+			<input type="date" id="started-on" name="started-on"><br>
+
+			<label for="completed-on">Completed On:</label>
+			<input type="date" id="completed-on" name="completed-on"><br>
+
+			<label for="weightage">Weightage:</label>
+			<input type="number" id="weightage" name="weightage"><br>
+
+			<label for="milestone">Milestone:</label>
+			<input type="number" id="milestone" name="milestone"><br>
+
+			<button type="submit" class="btn btn-primary mb-2">Submit Task</button>
+			<br>
+			<button routerLink="/home" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"class="btn btn-success">Home</button>
+
+			<br>
+		</form>
+
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
